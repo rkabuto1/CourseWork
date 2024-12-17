@@ -13,7 +13,7 @@ This repository contains all coursework I have completed so far as part of my **
 8. **MATH 327** - Probability with Statistical Methods (R Studio)  
 
 ### Upcoming Coursework
-I plan to complete the following courses in the upcoming semesters:  
+I plan to complete the following courses in the upcoming semesters to complete my degree:  
 1. **CS 350** - Operating Systems  
 2. **CS 373** - Automata Theory & Formal Languages  
 3. **CS 471** - Programming Languages  
