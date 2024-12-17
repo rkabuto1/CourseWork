@@ -5,7 +5,7 @@
 The main bearing clearance (in mm) in a certain type of engine is a random variable with the following probability density function:<br>
 
 
-<img width="152" alt="Screenshot 2024-12-17 at 6 48 02 PM" src="https://github.com/user-attachments/assets/bd4a310f-c0ae-41e4-9336-4553d2a59293" /> <br>
+<img width="479" alt="Screenshot 2024-12-17 at 6 48 02 PM" src="https://github.com/user-attachments/assets/bd4a310f-c0ae-41e4-9336-4553d2a59293" /> <br>
 
 
 
