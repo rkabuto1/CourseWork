@@ -1,0 +1,14 @@
+Capture screen shots to show case the following:
+
+1. Execution of lab5a
+2. Execution lab5b with commandline arguments “0 1 2 3 4 5”
+
+Debug lab5b with a breakpoint at the line with “int intValue = Integer...” with commandline arguments “0 1 2 a 4 5” show the values with the debugger for
+
+3. Screenshot showing “args.length”is 6
+4. Screenshot showing “args” of “args[i]” is [0, 1, 2, a, 4, 5]
+5. Screenshot showing “i” of “args[i]” has a value of 0
+
+In the terminal you did the linux command in, run the command "history" without the quotes. This will show all the commands you have recently run. 
+
+6. Take a screen shot show casing you worked through them.
