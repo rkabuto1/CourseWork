@@ -25,11 +25,9 @@ The simulations will be compared to the theoretical probabilities.
 
 To simulate the outcomes and compare theoretical results, run the `chevalier_simulation.r` script in an R environment.
 
-### Expected Output
+```
+Output From My Program
+```
 
-The program outputs the simulated and theoretical probabilities for both cases:
+<img width="479" alt="Screenshot 2024-12-17 at 6 36 02 PM" src="https://github.com/user-attachments/assets/cc0bc95d-5efa-4257-afb8-9ed42bc82f5f" />
 
-1. Rolling at least one six in four throws of a single die.
-2. Rolling at least one double six in 24 throws of a pair of dice.
-
-Finally, the program determines which event has a higher probability.
