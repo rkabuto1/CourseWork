@@ -1,0 +1,30 @@
+Your grade on lab0 will be as follows
+– Execution of lab0a – 20 points
+– Execution of lab0b with '0 1 2 3 4 5' input – 20 points
+– Execution of lab0b with '0 1 2 a 4 5' input – 20 points
+– Execution of lab0c with '0 1 2 a 4 5' input – 20 points
+– Answer to question 1 – 2.5 points
+– Explanation of question 1 – 2.5 points
+– Answer to question 2 – 2.5 points
+– Explanation of question 2 – 2.5 points
+– Answer to question 3 – 2.5 points
+– Explanation of question 3 – 2.5 points
+– Answer to question 4 – 2.5 points
+– Explanation of question 4 – 2.5 points
+● That should be a total of 100 points
+
+● Things to keep in mind related to the questions for the second program:
+– for( int i = 0; i < args.length; ++i )
+● Since “++i” and “i++” don't use “i” anywhere else in the
+statement, it seems like they should be equivalent
+
+– for( int i = 0; i++ < args.length; )
+● Since we are comparing “i” with args.length, and “i++”
+increments “i” after using it in the statement (after comparing “i”
+with args.length), we are comparing “i” with args.length, but we
+are incrementing “i” to “i+1” before using it in the print statement
+
+– for( int i = 0; ++i < args.length; )
+● Since we are incrementing “i” prior to comparing it to args.length,
+we are comparing “i+1” with args.length and also using “i+1” in
+the print statement

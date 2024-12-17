@@ -1,0 +1,46 @@
+Lab0b exercises
+
+For each of these exercises, once you have finished answering it, be sure to put the code for lab0b back in its original form.
+
+Hint: Take time to re-read the for loop information, where statement 1, statement 2, and statement 3 are explained in a bit more detail. 
+This should give you enough information to tackle these exercises.
+
+Exercise 1. Replace "i < args.length" with "i <= args.length" in either of the loops. 
+Compile and run with the commandline arguments of "0 1 2 3 4 5" without the quotes.
+Explain what happened and why it happened.
+
+
+Answer 1: It presented an output of the same but at the end of the code it said "Index 6 out of bounds for length 6". The reason for this is because we made i less than or equal too, it does not exit the for loop completly and does one more extra step.
+
+
+
+Exercise 2. Replace "i++" with "++i" in either of the loops. 
+Compile and run with the commandline arguments of "0 1 2 3 4 5" without the quotes.
+Note that here, "i++" should mean to increment "i" after using it in the statement. 
+"++i" should mean to increment "i" before using it in the statement.
+Explain what happened and why it happened. 
+
+
+Answer 2: The same output was shown as the originial code. The reason for this is because i++ and ++i have the same semantics in a for loop. They both have the same effect on i which explains why it is going to express the same output. For this instance, it doesn't matter which way you do it
+
+
+Exercise 3. Replace "for(int i = 0; i < args.length; i++)" with "for(int i = 0; i++ < args.length; )" in either of the loops. 
+Compile and run with the commandline arguments "0 1 2 3 4 5" without the quotes.
+Explain what happened and why it happened.
+
+
+Answer 3: Instead of it presenting the normal output being arg[1] = 1
+							   arg[2] = 2
+							   arg[1] as an int = 1
+							   arg[2] as an int = 2
+	 it was displayed as only arg[1] = 1
+	 			  arg[2] = 2
+Overall, it did not present the number as an int. The reason for this is because i++ is in the second statement for the for loop which means it skips the third statement. The reason for this is because i becomes true and therefore, skips the step and continues onto the next step instead of continuing to display it as an int.
+
+
+Exercise 4. Replace "for(int i = 0; i < args.length; i++)" with "for(int i = 0; ++i < args.length; )" in either of the loops. 
+Compile and run with the commandline arguments "0 1 2 3 4 5" without the quotes.
+Explain what happened and why it happened.
+
+
+Answer 4: It was shown to be the same output as the original code. The reason for this is because ++i returns the value after it is incremenented instead of it being the opposite which would be i++. This means that it makes it continue to the third statement of the code instead of it being skipped like it did in question 3.
