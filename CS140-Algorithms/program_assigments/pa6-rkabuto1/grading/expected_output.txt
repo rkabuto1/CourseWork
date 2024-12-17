@@ -1,0 +1,84 @@
+processing sample_weighted_graph_1a.txt
+	checking 1 -> 13
+		hasPath = true
+		cost = 6.0
+		path = (1,5,1.0),(5,6,1.0),(6,9,2.0),(9,13,2.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_1a.txt
+	checking 13 -> 0
+		hasPath = false
+		cost = NaN
+		path = 
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_2a.txt
+	checking 0 -> 20
+		hasPath = true
+		cost = 4.0
+		path = (0,5,1.0),(5,6,0.5),(6,18,2.0),(18,20,0.5)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_2a.txt
+	checking 1 -> 20
+		hasPath = true
+		cost = 6.5
+		path = (1,4,1.0),(4,7,1.0),(7,10,1.0),(10,13,0.5),(13,16,0.5),(16,19,1.0),(19,20,1.5)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_2a.txt
+	checking 10 -> 0
+		hasPath = false
+		cost = NaN
+		path = 
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_4a.txt
+	checking 0 -> 1
+		hasPath = true
+		cost = 3.0
+		path = (0,3,1.0),(3,4,1.0),(4,1,1.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_5a.txt
+	checking 0 -> 2
+		hasPath = true
+		cost = 3.0
+		path = (0,2,3.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_7.txt
+	checking 1 -> 15
+		hasPath = true
+		cost = 12.0
+		path = (1,349,1.0),(349,160,3.0),(160,789,3.0),(789,915,2.0),(915,245,2.0),(245,15,1.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_7.txt
+	checking 1 -> 2
+		hasPath = true
+		cost = 13.0
+		path = (1,405,1.0),(405,436,3.0),(436,328,3.0),(328,165,1.0),(165,555,2.0),(555,818,1.0),(818,2,2.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_7.txt
+	checking 2 -> 8
+		hasPath = true
+		cost = 16.0
+		path = (2,797,1.0),(797,805,1.0),(805,93,2.0),(93,500,1.0),(500,407,1.0),(407,592,1.0),(592,374,1.0),(374,430,1.0),(430,327,2.0),(327,575,3.0),(575,498,1.0),(498,8,1.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_8.txt
+	checking 1 -> 2
+		hasPath = true
+		cost = 13.0
+		path = (1,405,1.0),(405,436,3.0),(436,328,3.0),(328,165,1.0),(165,555,2.0),(555,818,1.0),(818,2,2.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_8.txt
+	checking 2 -> 8
+		hasPath = true
+		cost = 16.0
+		path = (2,797,1.0),(797,805,1.0),(805,93,2.0),(93,500,1.0),(500,407,1.0),(407,592,1.0),(592,374,1.0),(374,430,1.0),(430,327,2.0),(327,575,3.0),(575,498,1.0),(498,8,1.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_4.txt
+	checking 0 -> 1
+		hasPath = true
+		cost = 3.0
+		path = (0,3,1.0),(3,4,1.0),(4,1,1.0)
+currentTestResults = 	0	0	0
+processing sample_weighted_graph_5.txt
+	checking 0 -> 2
+		hasPath = true
+		cost = 3.0
+		path = (0,2,3.0)
+currentTestResults = 	0	0	0
