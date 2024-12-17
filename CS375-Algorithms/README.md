@@ -1,6 +1,6 @@
 # CS375: Design and Analysis of Algorithms
 
-Junior Year Bachelor's Level Algorithms Class For Computer Science
+Senior/Junior Level Bachelor's Level Algorithms Class For Computer Science
 
 This repository contains programming assignments and a project completed as part of **CS375: Design and Analysis of Algorithms**. The coursework focused on the design, implementation, and analysis of algorithms, focusing on their runtime complexities and efficiency across various problem domains.
 
