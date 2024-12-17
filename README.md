@@ -19,4 +19,4 @@ I plan to complete the following courses in the upcoming semesters to complete m
 3. **CS 471** - Programming Languages  
 
 ### Future Goals
-After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** to deepen my knowledge and expertise in the field.
+After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security**. 
