@@ -3,8 +3,6 @@
 
 ## Question
 
-**Exercise from Section 1.3:** Redo the yield of an undesirable side product with two different catalyst questions in R. Page 39 Question 5. In addition, construct stem-and-leaf plots for both catalysts. Is there any difference between the R-generated plots and your hand-drawn plots? Some commands you will be using are `boxplot`, `hist`, and `stem`. Type `?boxplot`, `?hist`, or `?stem` in the R console for details.
-
 A certain reaction was run several times using each of two catalysts, A and B. The catalysts were supposed to control the yield of an undesirable side product. Results, in units of percentage yield, for 24 runs of catalyst A and 20 runs of catalyst B are as follows:
 
 ### Catalyst A
@@ -23,3 +21,13 @@ A certain reaction was run several times using each of two catalysts, A and B. T
 1. Construct a histogram for the yields of each catalyst.
 2. Construct comparative boxplots for the yields of the two catalysts.
 3. Using the boxplots, what differences can be seen between the results of the yields of the two catalysts?
+
+
+Output From My Program
+<img width="372" alt="Screenshot 2024-12-17 at 6 23 00 PM" src="https://github.com/user-attachments/assets/22bfa57c-cf2b-46d4-b003-aabe6a5bb63a" />
+<img width="360" alt="Screenshot 2024-12-17 at 6 23 05 PM" src="https://github.com/user-attachments/assets/8119d7e8-a856-403e-8e99-640e44e3fd1a" />
+
+
+
+
+
