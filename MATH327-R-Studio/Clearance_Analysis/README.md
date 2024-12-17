@@ -1,7 +1,5 @@
 # Main Bearing Clearance Probability Analysis
 
-### Question
-
 The main bearing clearance (in mm) in a certain type of engine is a random variable with the following probability density function:<br>
 
 
