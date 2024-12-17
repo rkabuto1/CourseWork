@@ -1,14 +1,22 @@
 # The Monty Hall Problem Simulation
 
-### Question 3
-
-The Monty Hall problem: if you are on a game show, and you are given a chance to pick one of three doors. Behind one of the doors is a car and the rest are empty. If you randomly pick one door, and the host, who knows where the car is located, will open an empty door out of the two doors not picked.
+The Monty Hall problem: If you are on a game show, and you are given a chance to pick one of
+three doors. Behind one of the doors is a car and the rest are empty. If you randomly pick one
+door, and the host, who knows where the car is located, will open an empty door out of the two
+doors not picked.
 
 #### A) What is the probability that the door you pick will be a winning door before the host reveals a door?
 
 #### B) If you are offered a chance to switch your selection after the host reveals a door, should you take it?
 
 #### C) What is the probability of winning after switching?
+
+To calculate the probabilities, you will need to perform a lot of experiments/simulations. Each
+experiment involves assigning the car randomly to one of the doors and picking one door of
+your choice. Then reveals one of the doors not picked that is empty. Repeat the experiment
+many times and calculate the proportion among all experiments that the car is behind the door
+you pick before the revelations. After the revelations, calculate the proportions that the car is
+behind the door you original pick and the one you do not pick.
 
 ---
 
@@ -26,16 +34,8 @@ You then calculate:
 
 ---
 
-### Running the Code
+```
+Output From My Code
+```
+<img width="798" alt="Screenshot 2024-12-17 at 6 44 21 PM" src="https://github.com/user-attachments/assets/0ce428b4-3e88-485c-bb0a-256ac6d0e15e" />
 
-Run the `monty_hall_simulation.r` file in any R environment to simulate and calculate the probabilities.
-
----
-
-### Results
-
-The script compares simulated results to the theoretical results:
-- Probability of winning if you switch: **2/3** (theoretical).
-- Probability of winning if you do not switch: **1/3** (theoretical).
-
-The program outputs the simulated probabilities alongside the theoretical values.
