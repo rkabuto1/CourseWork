@@ -1,4 +1,4 @@
-# CS310-Algorithms
+# CS140-Algorithms
 
 
 Will Add Course Work Soon(This Message Was Sent as of 12/16/24)
