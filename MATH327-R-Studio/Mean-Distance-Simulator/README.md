@@ -1,49 +1,18 @@
 
 # Simulation to Estimate the Mean Distance Between Random Points
 
-## Question
+Application to mobile computer networks. Computer scientists often model the movement of a mobile computer as a random path within a rectangle.
+That is, two points are chosen at random within the rectangle, and the computer moves on a straight line from the first point to the second. In the study of mobile computer networks, it is important to know the mean length of a path (see the article "Station-ary Distributions for Random Waypoint Models," W.
+Navidi and T. Camp, IEEE Transactions on Mobile Computing, 2004:99-108). It is very difficult to compute this mean directly, but it is easy to estimate it with a simulation. This exercise presents a simulation experiment that is designed to estimate the mean distance between two points randomly chosen within a square of side 1. <br>
 
-In mobile computer networks, the movement of a computer is often modeled as a random path within a square. If the endpoints of a path are denoted \((X_1, Y_1)\) and \((X_2, Y_2)\), then the length of the path is given by:
+<img width="680" alt="Screenshot 2024-12-17 at 7 41 15 PM" src="https://github.com/user-attachments/assets/b57915ca-308c-44be-9dae-2166caae6fae" />
 
-\[
-L_i = \sqrt{(X_2 - X_1)^2 + (Y_2 - Y_1)^2}
-\]
 
-The exercise aims to estimate the mean distance between two randomly chosen points in a unit square of side 1 using simulation.
 
-### Tasks:
-a. Generate 1000 sets of endpoints \((X_1^i, Y_1^i)\) and \((X_2^i, Y_2^i)\) using the uniform distribution with minimum value 0 and maximum value 1 for each coordinate.  
-b. Compute the 1000 path lengths \(L_i\).  
-c. Compute the sample mean path length \(\bar{L}\) and compare it to the true mean of \(0.521405\).  
-d. Estimate the probability that a path length is more than 1 unit long.
 
-## Solution
+```
+Output From My Code
+```
 
-The provided R script generates:
-1. 1000 random pairs of points within a unit square.
-2. Calculates the path lengths between each pair.
-3. Computes the mean path length and compares it to the theoretical mean.
-4. Visualizes the results with:
-   - Histogram of path lengths.
-   - Boxplot of path lengths.
-   - Scatter plot of the points.
-   - Empirical CDF of path lengths.
-
-The probability that a path length exceeds 1 is also estimated.
-
-## Running the Code
-
-1. Download the `mean_distance_simulation.r` file.
-2. Run the script in R or RStudio.
-
-The script outputs:
-- The sample mean path length.
-- The difference between the sample mean and the true mean.
-- The probability that a path length exceeds 1.
-- Visualizations for further analysis.
-
-## Files
-
-- `mean_distance_simulation.r`: R script for estimating mean distance using simulation.
-- `README.md`: Problem statement and instructions.
+<img width="680" alt="Screenshot 2024-12-17 at 7 37 14 PM" src="https://github.com/user-attachments/assets/b4fcf5c9-f1f8-4c06-a192-9de55c95381b" />
 
