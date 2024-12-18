@@ -1,9 +1,7 @@
 
 # Normality Analysis with Reciprocal Transformation
 
-## Problem Statement
-
-### Part (a)
+### Part A
 Construct a normal probability plot for the following data:
 
 ```
@@ -16,7 +14,7 @@ Construct a normal probability plot for the following data:
 
 Determine whether the data appear to come from an approximately normal distribution.
 
-### Part (b)
+### Part B
 Transform the data by taking the reciprocal of each value and demonstrate that the reciprocals appear to come from an approximately normal distribution.
 
 ## Solution
@@ -26,17 +24,9 @@ The provided R script performs the following:
 2. Filters out zero values to ensure the reciprocal transformation is valid.
 3. Creates a normal probability plot for the reciprocal-transformed data.
 
-## Running the Code
+```
+Output From My Code
+```
 
-1. Download the `normality_analysis.r` file.
-2. Run the file in R or RStudio.
-
-The script generates:
-- A QQ plot for the original data.
-- A QQ plot for the reciprocal-transformed data.
-
-## Files
-
-- `normality_analysis.r`: R script for analysis.
-- `README.md`: Problem statement and instructions.
+<img width="630" alt="Screenshot 2024-12-17 at 7 24 19 PM" src="https://github.com/user-attachments/assets/04676116-98e6-44eb-a4fe-7ca1531d08de" />
 
