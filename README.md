@@ -10,9 +10,16 @@ This repository contains all coursework I have completed so far as part of my **
 5. **CS 320** - Advanced Computer Architecture 
 6. **CS 375** - Design and Analysis of Algorithms
 7. **CS 301** - Ethical, Social & Global Issues of Computing  
-8. **MATH 327** - Probability with Statistical Methods (R Studio)  
+8. **MATH 327** - Probability with Statistical Methods (R Studio)
 
-### Upcoming Coursework
+### Next Semester Classes
+
+1. **CS 350** - Operating Systems  
+2. **CS 373** - Automata Theory & Formal Languages
+3. **CS 444** - Programming For The Web
+4. **CS 402** - Software & Engineering - Project Managment
+
+### Remaining Coursework To Finish Degree
 I plan to complete the following courses in the upcoming semesters to complete my degree:  
 1. **CS 350** - Operating Systems  
 2. **CS 373** - Automata Theory & Formal Languages  
