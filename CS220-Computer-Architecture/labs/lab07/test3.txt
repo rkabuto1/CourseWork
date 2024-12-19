@@ -1,0 +1,3 @@
+Peter Piper Picked a Peck of Pickled Peppers.
+
+That, using a key of AAAA, should make mod 128 fail.

@@ -1,0 +1,6 @@
+# The following is an example input file for the mix program
+# ----+----1----+----2----+----3----+----4----+----5--
+S This is a character string that writes to the buffer1231231231231231231232131231231231231232131232132131
+# And we can add a hex address to our input...
+# --+----6----+----7----+----8----+----9----+----A...
+A 0000555555555212

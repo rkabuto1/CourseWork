@@ -1,0 +1,54 @@
+This is an example of a text file that demonstrates how filters work.
+In this example, there is an outline, where the levels of the outline are represented by tabs.
+
+I. Command Line Arguments
+	A. int argc
+		argc is the count of the total number of blank delimited arguments
+	B. char *argv[]
+		argv is an array of pointers
+		There are argc elements in this array
+		The array is indexed as argv[0], argv[1], ..., argv[argc-1]
+	C. Command line parsing
+		argv[0] is always the name of the command itself
+		argv[1], argv[2], ... ,argv[argc-1] are the blank delimited words after the command
+		
+II. Standard Files
+	A. standard input or stdin
+		UNIX always opens an input I/O stream, by default connected to the keyboard
+		You can read the stdin stream using the C stdio library functions 
+		The simplest function is "getchar()" which reads a single character from stdin
+		You can "type" an "end of file" character on the keyboard using Ctrl-d
+		You can check for an "end of file" character using the C "EOF" definition provided in stdio.h
+	B. standard output or stdout
+		UNIX always opens an output I/O stream, by default, written to the monitor
+		You can write to the stdout stream using the C stdio library functions
+		The simplest function is "putchar()" which writes a single character (the argument) to stdout
+		Standard output was designed to be consumed by another program
+	C. standard error
+		UNIX always opens a second output I/O stream, by default, written to the monitor
+		You can write to the stderr stream using the C stdio library functions, but need to specify the "stdout" stream
+		Most often, we will use the fprintf function to write a line to stderr.
+		Standard error was designed to produce error messages to be consumed by a human
+		
+III. UNIX Redirection
+	A. standard input redirection
+		You can override the default of connecting stdin to the keyboard by adding "<file.txt"
+		The redirection text, "<file.txt", comes after the command and any command line arguments
+		The result is that the program will read "file.txt" instead of the keyboard.
+		Any valid existing file name can be used instead of "file.txt"
+	B. standard output redirection
+		You can override the default of connecting stdout to the monitor by adding ">file.txt"
+		The redirection text, ">file.txt", comes after the command and command line arguments
+		The result is that the program will write standard output to "file.txt" instead of the monitor
+		Any valid file name can be used instead of "file.txt".
+		If the file does not exist, it will be created. If it does exist, it will be overwritten.
+	C. standard error redirection
+		You can override the default of connecting stderr to the monitor by adding "2>file.txt"
+		The redirection text, "2>file.txt", comes after the command and command line arguments
+		The result is that the program will write standard error to "file.txt" instead of the monitor
+		Any valid file name can be used instead of "file.txt".
+		If the file does not exist, it will be created. If it does exist, it will be overwritten.
+	D. Pipelining
+		You can connect stdout of one program to stdin of another program by putting a "pipe" charater (|) between the two
+		For example "cat file.txt | grep xyz" will connect the output of the "cat" command to the input of the "grep" command.
+		

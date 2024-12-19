@@ -1,0 +1,22 @@
+Answer the following questions by editing this file and committing the updates.
+
+Given a C function which returns the factorial of an input x, what is the largest x 
+that produces a correct answer, and what is the value of that factorial, 
+assuming the return type of the function is: 
+
+1. char? 5!=120 [The first one is done for you to demonstrate what I'm looking for.] The largest valid x is 5, and 5! = 120
+2. unsigned char = The largest valid x is 5, and 5! = 120
+3. short = The largest valid x is 7, and 7! = 5040
+4. unsigned short = The largest valid x is 8, and 8! = 40320
+5. int =  The largest valid x is 12, and 12! = 479001600
+6. unsigned int = The largest valid x is 12, and 12! = 479001600
+7. long = The largest valid x is 20, and 20! = 2432902008176640000
+8. unsigned long = The largest valid x is 20, and 20! = 2432902008176640000
+
+9. Can the unsigned version of any integer type ever have a bigger x than the signed version?
+Yes. The reason is because there is a maximum value of each specificed data type. However, since there some of the maximums are so similar to signed and unisigned, the factorial isn't going to matter in most cases. There are going to be chances that the unsigned value and the signed value are going to have different max value x and an example would be with Short and unsigned short. But for signed and unisigned, it does matter and can varry
+
+10. If the unsigned version can have a bigger x, show an example where this is true. If not, why not?
+
+There are going to be chances where the unsigned can have a bigger x. An unsigned integer can have the values that lead up to 4,294,967,295 compared to a signed integer that can only have 2,147,384,647. Generally, when there is a permitted bit width, the unsigned can have a larger maximum value than signed. This is because of the positive or negative sign represnetations which can enable bits to potray themselves in different ways.
+
