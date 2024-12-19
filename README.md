@@ -5,12 +5,13 @@ This repository contains all coursework I have completed so far as part of my **
 ### Completed Coursework
 1. **CS 101** - Professional Skills, Ethics & Computer Science Trends  
 2. **CS 120** - Programming & Hardware Fundamentals  
-3. **CS 210** - Programming with Objects & Data (previously CS140)  
+3. **CS 140** - Programming with Objects and Data Structures  
 4. **CS 220** - Architecture from a Programming Perspective
-5. **CS 320** - Advanced Computer Architecture 
-6. **CS 375** - Design and Analysis of Algorithms
-7. **CS 301** - Ethical, Social & Global Issues of Computing  
-8. **MATH 327** - Probability with Statistical Methods (R Studio)
+5. **CS 310** - Programming with Objects & Data Structures (previously CS240)  
+6. **CS 320** - Advanced Computer Architecture 
+7. **CS 375** - Design and Analysis of Algorithms
+8. **CS 301** - Ethical, Social & Global Issues of Computing  
+9. **MATH 327** - Probability with Statistical Methods (R Studio)
 
 ### Next Semester Classes
 
