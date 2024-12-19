@@ -1,0 +1,116 @@
+Pick a line or two from your C file and tell us why the translation of that line or lines to X86 assembler was interesting.
+
+1st Piece of C Code)
+---------------------------------------------------------------------------------------------------------------------------------------
+unsigned long long factorial(int n) 
+{
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+My response) The first part of C code that I looked at was the factorial function. What this does is that it calcualtes that factorial
+of an integer "n" and returns an unsigned double long integer so it doesn't cause overflow.There is recursion that occurs here until 
+the base cases is finally reached which is when n = 1 or 0. Finally, it outputs the final result of the factorial of what the input 
+n was. Part of this C code when it is transalted to x86 turns out to be.
+
+factorial:
+.LFB0:
+	.cfi_startproc
+	pushq	%rbp	#
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp	#,
+	.cfi_def_cfa_register 6
+	pushq	%rbx	#
+	subq	$24, %rsp	#,
+	.cfi_offset 3, -24
+	movl	%edi, -20(%rbp)	# n, n
+# lab04.c:6:     if (n == 0 || n == 1) {
+	cmpl	$0, -20(%rbp)	#, n
+	je	.L2	#,
+# lab04.c:6:     if (n == 0 || n == 1) {
+	cmpl	$1, -20(%rbp)	#, n
+	jne	.L3	#,
+.L2:
+# lab04.c:7:         return 1;
+	movl	$1, %eax	#, _4
+	jmp	.L4	#
+.L3:
+# lab04.c:9:         return n * factorial(n - 1);
+	movl	-20(%rbp), %eax	# n, tmp87
+	movslq	%eax, %rbx	# tmp87, _1
+# lab04.c:9:         return n * factorial(n - 1);
+	movl	-20(%rbp), %eax	# n, tmp88
+	subl	$1, %eax	#, _2
+	movl	%eax, %edi	# _2,
+	call	factorial	#
+# lab04.c:9:         return n * factorial(n - 1);
+	imulq	%rbx, %rax	# _1, _4
+.L4:
+# lab04.c:11: }
+	movq	-8(%rbp), %rbx	#,
+	leave	
+	.cfi_def_cfa 7, 8
+	ret	
+	.cfi_endproc
+
+My Response) The reason that I found this translation interesting is because in C code, when it uses recursion to calculate a factorial
+, it calls the multiples n from the factorail "n - 1". However in assembly, the code uses the stack such as pushq and subq commands. In 
+which the return address and local variables are stored during function calls. While C language code stores memory management by being 
+abstracted by the compiler.
+---------------------------------------------------------------------------------------------------------------------------------------
+
+2nd Piece of Code
+
+int main() 
+{
+    char c;
+    int LC = 0;
+    unsigned long LCResult = 0;
+    
+    for (c = 0; c <= 127; c++) {
+        unsigned long r = factorial(c);
+        if (r <= 127) {
+            LC = c;
+            LCResult = r;
+        } else {
+            break;
+        }
+    }
+
+    printf("char: The largest valid x is %d, and %d! = %llu\n", LC, LC, (unsigned long long)LCResult);
+}
+
+My Response) The next snipet of code that I want to talk about is the for loop that occurs in the C code that figures out and 
+prints char. What the for loop does is that it iterates through 0 to 127 to calculate the largest valid value of char in C language. 
+The reason we do not want it to exceed 127 is because than it will reach the data type limit value and cause problems in our output. 
+The for loop translates to this in assembly language
+
+main:
+.LFB1:
+	.cfi_startproc
+	pushq	%rbp	#
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp	#,
+	.cfi_def_cfa_register 6
+	subq	$208, %rsp	#,
+# lab04.c:18:     int LC = 0;
+	movl	$0, -8(%rbp)	#, LC
+# lab04.c:19:     unsigned long LCResult = 0;
+	movq	$0, -16(%rbp)	#, LCResult
+# lab04.c:21:     for (c = 0; c <= 127; c++) {
+	movb	$0, -1(%rbp)	#, c
+.L9:
+
+My response) The reason that I found this assembly code interesting is because the variables are accessed through the memory 
+address(%rbp) where in C, the variables are acecssed through names and types. Furthermore, the constants are directly specified 
+in instructions, as seen with $0. This contrasts with C, where variables and their initializations are expressed using variable 
+names and assignment operators such as =. 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+

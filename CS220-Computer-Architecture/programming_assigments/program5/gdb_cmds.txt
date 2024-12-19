@@ -1,0 +1,4 @@
+# Break after if/then/else
+break 11
+set disassemble-next-line on
+run
