@@ -4,7 +4,8 @@ Question - Design an algorithm to solve a “ball-picking” problem.
 
 Problem statement: there are a number of balls (n) placing in a circle, with all white except one red. Starting from any one of the balls, a robot travels along the circle in a clockwise direction, and pick a ball in every three balls (k=3 which means for every three balls, skip the first two balls, and picks the third one). The procedure is repeated with the remaining balls, starting with the next ball, the robot travels on the circle repeatedly, and pick balls in the same way until only one ball remains. In order to keep the red-ball remained at final, which ball has to be the first ball for robot to start with?  
 
-Example:
+Example:<br>
+
 <img width="535" alt="Screenshot 2024-12-19 at 10 13 18 PM" src="https://github.com/user-attachments/assets/395e13aa-34a2-4893-b698-1737ed2603d8" />
 
 
