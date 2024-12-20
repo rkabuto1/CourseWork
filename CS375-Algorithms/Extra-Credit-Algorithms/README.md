@@ -1,5 +1,5 @@
 ```
-Josephs Algorithm
+Josephus Algorithm
 ```
 Design an algorithm to solve a “ball-picking” problem. 
 
@@ -32,10 +32,44 @@ Simplex Algorithm
 
 Using the Simplex Algorithm to solve the three variables linear programming problem<br>
 
-<img width="403" alt="Screenshot 2024-12-19 at 10 20 22 PM" src="https://github.com/user-attachments/assets/3757f983-97d9-465b-862b-f2818f9357d8" /><br>
+<img width="535" alt="Screenshot 2024-12-19 at 10 20 22 PM" src="https://github.com/user-attachments/assets/3757f983-97d9-465b-862b-f2818f9357d8" /><br>
+
+**Show the results through the pivot operations and linear program (show the table step by step). Implement the Simplex Algorithm and display the results by your program, and print out the running time.**
+
+---
+```
+GraphLoopDetection
+```
+
+Design an algorithm which can automatically indicate whether or not a graph G contain a cycle.  Using the following two graphs as two examples to indicate what data structure to represent (i) and (ii), respectively.  
+
+<img width="535" alt="Screenshot 2024-12-19 at 10 23 14 PM" src="https://github.com/user-attachments/assets/12b7543b-f5eb-4d8a-b962-1e020da524b8" />
 
 
-Show the results through the pivot operations and linear program (show the table step by step). Implement the Simplex Algorithm and display the results by your program, and print out the running time.
+**Task - Implement your algorithm by using an appropriate data structure, and print out a cycle if the graph a cyclic. Print out the running time.**
+
+---
+
+```
+TopologicalSortWithEdgeClassification
+```
+
+Apply topological sort to the graph below. Show the sequence of the nodes found by your application. Include also the discovery and finishing time of each node.  (Assume the starting node is 1, the second node to go is 7.  Also node 2 will be selected before node 4.)  
+
+<img width="535" alt="Screenshot 2024-12-19 at 10 24 38 PM" src="https://github.com/user-attachments/assets/9bc07796-2ea3-4e95-9ac1-ac592bf043f8" />
+
+**Task - Implement the algorithm and print out the topological sorted nodes, and print out the edge type for each edge (e.g., T – tree edge; F – forward edge; B – backward edge; C – cross edge).  What’s the time complexity. Print out the running time.**
+
+---
+```
+TravelingSalesman
+```
+
+**Task - Using the Best-First Search Algorithm to give a solution of the following Traveling Salesman Problem. Show the state space tree and the optimal tour and write a program to implement it.**
+
+<img width="535" alt="Screenshot 2024-12-19 at 10 26 35 PM" src="https://github.com/user-attachments/assets/1d635083-bec6-4ffe-9bbf-3c8c510cd93c" />
+
+
 
 
 
