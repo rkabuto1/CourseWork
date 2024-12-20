@@ -1,5 +1,5 @@
 ```
-Josephs Algirthm
+Josephs Algorithm
 ```
 Design an algorithm to solve a “ball-picking” problem. 
 
