@@ -25,4 +25,17 @@ A bipartite graph G(V, E) is an undirected graph whose vertices can be partition
 
 <img width="535" alt="Screenshot 2024-12-19 at 10 18 32 PM" src="https://github.com/user-attachments/assets/5c37454f-097f-4824-a33d-c4b19de84819" />
 
+---
+```
+Simplex Algorithm
+```
+
+Using the Simplex Algorithm to solve the three variables linear programming problem<br>
+
+<img width="403" alt="Screenshot 2024-12-19 at 10 20 22 PM" src="https://github.com/user-attachments/assets/3757f983-97d9-465b-862b-f2818f9357d8" /><br>
+
+
+Show the results through the pivot operations and linear program (show the table step by step). Implement the Simplex Algorithm and display the results by your program, and print out the running time.
+
+
 
