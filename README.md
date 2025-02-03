@@ -13,7 +13,7 @@ This repository contains all coursework I have completed so far as part of my **
 8. **CS 301** - Ethical, Social & Global Issues of Computing  
 9. **MATH 327** - Probability with Statistical Methods (R Studio)
 
-### Next Semester Classes
+### Current Semester Classes
 
 1. **CS 350** - Operating Systems  
 2. **CS 373** - Automata Theory & Formal Languages
