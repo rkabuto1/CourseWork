@@ -22,7 +22,8 @@ This repository contains all coursework I have completed so far as part of my **
 
 ### Remaining Coursework To Finish Degree
 I plan to complete the following courses in the upcoming semesters to complete my degree:  
-3. **CS 471** - Programming Languages  
+
+  1. **CS 471** - Programming Languages  
 
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security**. 
