@@ -23,7 +23,10 @@ This repository contains all coursework I have completed so far as part of my **
 ### Remaining Coursework To Finish Degree
 I plan to complete the following courses in the upcoming semesters to complete my degree:  
 
-  1. **CS 471** - Programming Languages  
+  1. **CS 471** - Programming Languages
+      Description of 471 - Introduction to the design and implementation of programming languages: linguistic features for expressing algorithms; formal syntax
+      specification; introduction to language semantics and parsing; declarative programming (functional and goal-driven); scripting languages; imperative
+      programming (procedural and object-oriented); comparative design and implementation issues across languages and paradigms. Assignments emphasize languages        such as Prolog, Haskell, Python, and Ruby.
 
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security**. 
