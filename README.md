@@ -8,25 +8,24 @@ This repository contains all coursework I have completed so far as part of my **
 3. **CS 140** - Programming with Objects and Data Structures  
 4. **CS 220** - Architecture from a Programming Perspective
 5. **CS 310** - Programming with Objects & Data Structures (previously CS240)  
-6. **CS 320** - Advanced Computer Architecture 
-7. **CS 375** - Design and Analysis of Algorithms
-8. **CS 301** - Ethical, Social & Global Issues of Computing  
-9. **MATH 327** - Probability with Statistical Methods (R Studio)
+6. **CS 320** - Advanced Computer Architecture
+7. **CS 350** - Operating Systems
+8. **CS 373** - Automata Theory and Formal Languages
+9. **CS 375** - Design and Analysis of Algorithms
+10. **CS 402** - Software Engineering Project Management
+11. **CS 444** - Programming For The Web
+12. **CS 301** - Ethical, Social & Global Issues of Computing  
+13. **MATH 327** - Probability with Statistical Methods (R Studio)
 
-### Current Semester Classes
+### Next Semester Classes - Fall 2025(Gradutation Semester)
 
-1. **CS 350** - Operating Systems  
-2. **CS 373** - Automata Theory & Formal Languages
-3. **CS 444** - Programming For The Web
-4. **CS 402** - Software & Engineering - Project Management 
+1. **CS 471** - Programming Languages
+2. **CS 442** - Database Systems
+3. **CS 435** - Introduction to Data Mining
 
-### Remaining Coursework To Finish Degree
-I plan to complete the following courses in the upcoming semesters to complete my degree:  
+### Summer Plans/Work For 2025
 
-  1. **CS 471** - Programming Languages
-      Description of 471 - Introduction to the design and implementation of programming languages: linguistic features for expressing algorithms; formal syntax
-      specification; introduction to language semantics and parsing; declarative programming (functional and goal-driven); scripting languages; imperative
-      programming (procedural and object-oriented); comparative design and implementation issues across languages and paradigms. Assignments emphasize languages        such as Prolog, Haskell, Python, and Ruby.
+I will be doing an internship at Queens College working for the Cyber-Security Department as a CyberSecurity Analyst Intern.
 
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security**. 
