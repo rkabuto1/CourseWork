@@ -7,7 +7,7 @@ This repository contains all coursework I have completed so far as part of my **
 2. **CS 120** - Programming & Hardware Fundamentals  
 3. **CS 140** - Programming with Objects and Data Structures  
 4. **CS 220** - Architecture from a Programming Perspective
-5. **CS 310** - Programming with Objects & Data Structures (previously CS240)  
+5. **CS 310** - Programming with Objects & Data Structures 
 6. **CS 320** - Advanced Computer Architecture
 7. **CS 350** - Operating Systems
 8. **CS 373** - Automata Theory and Formal Languages
