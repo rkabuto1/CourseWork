@@ -1,0 +1,16 @@
+abccbaabc accept
+cabcacbaabcacca accept
+abccbaabcaaa accept
+aacacaabcccbaabaacaaa accept
+cabacaa accept
+cccacacabacacacacacaaac accept
+bcaaaacaaaaaaaaaacaacb accept
+bcaaaacaaaabbaaaaaacaacb accept
+bcabacbc reject
+cabacabacaacabcacccab reject
+abaacaaacaacabcacacaab reject
+abcacbacabc reject
+bacabacabacabacba reject
+bcbc reject
+abab reject
+acac reject
