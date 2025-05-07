@@ -1,5 +1,0 @@
-Name:		Rick Kabuto
-B-Number:	B00969023
-Email:		rkabuto1@binghamton.edu
-
-Add text here as needed to document the status of your project.
