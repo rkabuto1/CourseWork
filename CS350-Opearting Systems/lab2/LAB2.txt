@@ -1,0 +1,39 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+In this lab, I created a new user program called `lab2.c` that mimics the functionality of the Unix 
+`echo` command. The program prints the command-line arguments passed to it, separated by spaces.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+To Run My Lab
+1) "chmod ugo+x sign.pl"
+2) "make qemu-nox"
+3) After it runs, you should see a string saying "This is the Kernel Space. Part 1 Of Lab2". This completes
+Part 1 of my lab.
+4) Next, type "lab2 [Any Input String], and it will echo it output
+            Example) 
+            Input) lab2 "This is a string"
+            Output) This is a string
+
+The reason that it is in the Kernel space is because While the program runs in user space, the underlying
+system calls for I/O, such as printing to the console, are handled by the kernel, allowing user programs 
+to interact with hardware resources.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=          
+Here is an example of the echno command working
+
+SeaBIOS (version 1.16.3-debian-1.16.3-2~bpo12+1)
+
+
+iPXE (http://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+1EFCEC40+1EF0EC40 CA00
+                                                                               
+
+
+Booting from Hard Disk...
+xv6...
+This is the Kernel Space. Part 1 Of Lab2.
+cpu0: starting 0
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$ lab2 Hello World
+Hello World 
+$ lab2 this is our test?
+this is our test? 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
