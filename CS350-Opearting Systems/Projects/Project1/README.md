@@ -1,106 +1,133 @@
-# CS 350 Operating Systems – Programming Project 1 (PROJ1)
+#!/bin/bash
+# README: CS 350 Operating Systems, Spring 2025
+# Programming Project 1
 
-**Out:** 02/12/2025, MON  
-**Due:** 03/02/2025, SUN 23:59:59  
+cat << 'EOF'
+CS 350 Operating Systems, Spring 2025
+Programming Project 1 
 
-## Overview
+## Project Description
+In this project, you will add new functionality to xv6, including the ability to shut the system
+down, print exit statuses, and output uptime. You will also answer questions related to system
+call implementation in xv6. The goal of this project is to learn how system calls are implemented
+in modern OSes and how system calls are invoked from a user program in xv6.
 
-In this project, you will add new functionality to xv6, including the ability to shut the system down, print exit statuses, and output uptime. You will also answer questions related to system call implementation in xv6. The goal is to learn how system calls are implemented in modern OSes and how system calls are invoked from a user program in xv6.
+This project contributes 6.25% toward the final grade.
 
-This is a group project. Each group member must:
-- Implement the `shutdown` system call.
-- Choose and implement one of four unique system calls.
-- Submit their own code on Brightspace.
+1) Baseline source code
+For this and all the later projects, you will be working on the baseline code that needs to be
+downloaded from brightspace. Please make sure you read this whole section, as well as the grading
+guidelines (Section 6), before downloading your code from Brightspace.
 
-**Contribution:** 6.25% of final grade.
+2) Build and run xv6
+The following provides instructions on how to build and run xv6 using either a CS machine or
+your own computer.
 
-## 1. Baseline Source Code
+2.1) Using a CS machine
 
-Download the baseline code from Brightspace. Read all instructions and grading policies before modifying code.
+   (1) Log into a CS machine (i.e., a local machine or a remote cluster machine).
+   (2) Download and SCP the baseline xv6 code.
+   (3) Compile and run xv6:
+   $ make qemu-nox
 
-## 2. Build and Run xv6
+After the compiling the kernel source and generating the root file system, the Makefile will
+start a QEMU VM to run the xv6 kernel image just compiled (you can read the Makefile for
+more details). Then you will see the following output (disregard the warning message(s)),
+indicating you have successfully compiled and run the xv6 system.
 
-### 2.1 Using a CS Machine
-1. Log into a CS machine.
-2. Download and SCP the xv6 baseline code.
-3. Compile and run:
-   ```sh
-   make qemu-nox
-   ```
+xv6...
+cpu0: starting 0
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$
 
-If you get a permission error:
-```sh
+Troubleshooting: if you see the following error message
+make: execvp: ./sign.pl: Permission denied
+Solve it by running the following command:
 chmod ugo+x ./sign.pl
+Then
 make clean
 make qemu-nox
-```
 
-### 2.2 Using Your Own Computer
-1. Install QEMU:
-   ```sh
-   sudo apt-get install qemu
-   ```
-2. SCP code from CS machines.
-3. Comment out this line in Makefile:
-   ```
-   # QEMU = ˜boubinjg/fs/bin/qemu-system-i386
-   ```
-4. Compile and run as before.
+2.2 Using your own computer
+You will need a Linux distribution that supports GNU C, which is targeted at the x86 architecture
+and using ELF binaries.
+(1) Install QEMU in your computer. For example, on Ubuntu, just run:
+$ sudo apt-get install qemu
+(2) Perform Section 2.1 step (2).
+(3) Open the Makefile in the xv6 source directory, and comment out the following line:
+QEMU = ˜boubinjg/fs/bin/qemu-system-i386
+by putting a “#” at the beginning of the line.
+(4) Perform Section 2.1 step (3).
 
-## 3. System Calls (60 points)
+3 Shutdown commands and system calls (60 points)
+The original xv6 system doesn’t have a “shutdown” command to properly turn off the machine.
+In this part, you are going to add a “shutdown” command to shut down the machine and four
+other system calls.
 
-### 3.1 `shutdown`
-Complete the system call and user-space wrapper for `shutdown`. See `shutdown.c`.
+3.1 shutdown command and the system call
+The first command you need complete is named “shutdown”, which simply shuts down the machine.
+In the baseline code, the file “shutdown.c” provides the implementation of this command.
+What you need to do is to complete the corresponding system call and its user space wrapper routine.
 
-### 3.2 Additional System Calls
-Each group member selects one of the following (no repetition):
+3.2 Additional system calls
+Operating systems developers regularly update their operating systems with new features, which
+may include new system calls. Your group will add N additional system calls to xv6 where
+N == GroupSize. Each group member is responsible for one system call, and can be helped by
+other group members. 5 example system calls are documented below. Select N of these 5, without
+repetition.
 
-- **shutdown2**: Shutdown with a custom message. See `shutdown2.c`.
-- **exit2**: Custom exit with status printing. See `exit2.c`.
-- **mkdir2**: Create two directories. See `mkdir2.c`.
-- **uptime2**: Return uptime in different units. See `uptime2.c`.
-- **Custom syscall (optional, +5 extra credit)**: Must accept an argument and be documented in `PROJ1.txt`.
+3.2.1 shutdown2
+The first command you may complete is named “shutdown2”, which prints a shutdown message
+provided by the user within the system call implementation before shutting down the machine.
 
-### 3.3 Requirements and Hints
+3.2.2 exit2
+The second command you may complete is named “exit2”, which behaves like the exit() system
+call and voluntarily exits a running process. exit2 takes an integer exit status argument and prints
+that status within the system call implementation before exiting.
 
-- Do not modify user wrapper code other than disabling `STUB FUNCS`.
-- Use the following code to shut down:
-  ```c
+3.2.3 mkdir2
+The third command you may complete is named “mkdir2”, which behaves like the mkdir system
+call. mkdir2 takes two directory names as arguments and creates both directories in your file system.
+
+3.2.4 uptime2
+The fourth command you may complete is named “uptime2”, which behaves like the uptime
+system call which returns the amount of ticks (100ths of a second) your system has been turned
+on. uptime2 provides takes an integer argument which changes the format of the return value in
+kernel space. uptime2(1) returns uptime in ticks, uptime2(2) returns uptime in seconds, and
+uptime2(3) returns uptime in minutes.
+
+3.2.5 Custom System Call (5 extra credit points)
+If you would like, one group member can complete a custom system call. This system call can
+be based on an existing system call, or entirely of your own invention. Your custom system call
+MUST take at least one argument and use that argument in its functionality.
+Please document the purpose, functionality, and usage of this system call in a PROJ1.txt file
+included with your code.
+
+3.3 Requirements and hints
+• You should not change the code in shutdown.c or other user space wrappers.
+• To shut down the xv6 virtual machine in your system call, use:
   outw(0xB004, 0x0|0x2000);
   outw(0x604, 0x0|0x2000);
-  ```
-- Refer to `cat.c`, `sysfile.c`, and syscall-related code for examples.
+• Study how other system calls (like open) are implemented.
+• Understand the files involved, including the simple assembly ones.
 
-## 4. xv6 System Call Implementation Q&A (40 points)
+4 xv6 system call implementation Q&A (40 points)
+Answer the following questions:
 
-Answer these in a PDF named `xv6-syscall-mechanisms.pdf`:
+(1) What is the name, invocation location, and definition location of the shutdown2 wrapper?
+(2) How does the wrapper trigger the system call? Include code.
+(3) How does the kernel locate and call the system call? Include code.
+(4) How are arguments passed from user space to the kernel?
 
-1. What is the name, invocation location, and definition location of the `shutdown2` syscall wrapper? (10 pts)
-2. How does the wrapper trigger the syscall? (10 pts)
-3. How does the kernel locate and call the syscall? (10 pts)
-4. How are syscall arguments passed from user space to the kernel? (10 pts)
+Save your answers in a file named xv6-syscall-mechanisms.pdf and submit it on Brightspace.
 
-## 5. Submit Your Work
+5 Submit your work
+Submit your code as a zip file on Brightspace. Include a PROJ1.txt file with details of who did what.
 
-Submit a zip file to Brightspace containing:
-- Code
-- `PROJ1.txt`: Description of group work and implementation status.
-
-You may include:
-- Incomplete features
-- Code explanations
-- Test case logs
-
-**Test thoroughly on a CS machine before submission.**
-
-## 6. Grading Policy
-
-- **Late penalty**: 30% off per day (up to 2 days)
-- **System abuse (100% CPU)**: -10 pts
-- **Build issues**:
-  - Minor fix: -1% to -10%
-  - Major fix (after demo): -11% to -20%
-  - No fix or no response: **0 points**
-- **Partial credit** for incomplete or buggy code
-- **Cheating**: Zero and disciplinary action
-
+6 Grading
+• Late penalty: 30% per day, up to 2 days.
+• Don’t use unapproved xv6 source. 100% CPU on QEMU = -10.
+• If your code doesn’t patch or compile, TAs will try to fix it. See penalty breakdown.
+• Broken functionality = partial credit.
+• Cheating = zero and academic action.
