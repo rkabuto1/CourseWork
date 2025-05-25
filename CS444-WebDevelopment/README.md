@@ -32,4 +32,6 @@ Each project builds upon the previous:
 - Project 3 adds network access
 - Project 4 adds a frontend UI
 
-Together, they form a complete and functional web-based grading system.
+### Example Picture of the Complete & Finished Product
+![Screenshot 2025-05-25 at 3 49 41 PM](https://github.com/user-attachments/assets/adb666ff-4930-412a-a6d7-91a5e4c689e7)
+
