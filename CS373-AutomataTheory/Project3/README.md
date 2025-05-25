@@ -63,4 +63,8 @@ Design considerations:
 - Based on correct acceptance/rejection of test strings.
 - Efficiency and stack usage will be informally considered for complex cases.
 
+## Picture Of Implementation
+<img width="996" alt="Screenshot 2025-05-25 at 2 11 11 PM" src="https://github.com/user-attachments/assets/94b9b160-0a29-48b2-950a-99e732ace9d7" />
+
+
 ---
