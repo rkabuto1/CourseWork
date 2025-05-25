@@ -1,6 +1,6 @@
 # Automatic Zoom - Project Set
 
-This repository contains six projects focused on simulating and constructing automata and Turing machines. Below are the descriptions for each project:
+This repository contains seven projects focused on simulating and constructing automata and Turing machines. Below are the descriptions for each project:
 
 ---
 
@@ -15,8 +15,6 @@ Output `accept` or `reject` followed by the reachable states.
 ## Project 2 - Marble Game Simulation
 
 **Task**:  
-Either:
-- Construct a **DFA in JFLAP** that simulates a marble game where you win if the last marble exits chute B or D; lose if it exits chute C or E, **OR**
 - Write a **program** (Java, C, or C++) that simulates the marble game by tracking gate toggling and marble exits based on input strings.
 
 ---
@@ -70,3 +68,6 @@ Constraints:
 
 ---
 
+## Project 7 - Binary Real Number Addition via Turing Machine
+
+Construct a deterministic, one-way infinite single-tape Turing machine in JFLAP that adds two binary real numbers of the form X#Y, where X and Y contain fractional parts (e.g., 101.101#11.01). The machine must handle alignment of decimal points, perform carry-aware binary addition, and format the result to remove invalid leading/trailing zeros.
