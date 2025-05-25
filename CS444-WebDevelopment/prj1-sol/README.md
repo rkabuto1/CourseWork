@@ -21,103 +21,58 @@ This project implements the core logic of a course grade management system using
   type RowData = Record<ColId, Entry>;
   type SectionData = Record<RowId, RowData>;
 
-# Example Grade Table
+## Example Grade Table
+id hw1 hw2 prj1 prj2 hAvg pAvg
+jfillho 80 85 88 92 82.5 90
+strudy 90 96 92 98 93 95
+$avg 85 90.5 90 95 87.8 92.5
+$max 90 96 92 98 93 95
 
-id        hw1  hw2  prj1 prj2  hAvg  pAvg
-jfillho    80   85    88   92  82.5    90
-strudy     90   96    92   98    93    95
-$avg       85 90.5    90   95  87.8  92.5
-$max       90   96    92   98    93    95
 
-# Interpretation
-# Rows 1–2: Raw student scores
-# Columns hw1–prj2: Raw assignment grades
-# hAvg/pAvg: Row aggregates
-# $avg/$max: Column aggregates
+**Interpretation:**
+- Rows 1–2: Raw student scores  
+- Columns `hw1–prj2`: Raw assignment grades  
+- `hAvg` / `pAvg`: Row aggregates  
+- `$avg` / `$max`: Column aggregates  
 
-# Requirements
+---
 
-# Submit a .zip that expands into prj1-sol/
-# Must contain:
-#   README
-#   package.json
-#   package-lock.json
-#   tsconfig.json
-#   vm.png
-# Must NOT contain:
-#   node_modules/
-#   dist/
+## Requirements
 
-# To run tests:
-npm ci
+- Submit a `.zip` that expands into `prj1-sol/`
+- Must contain:
+  - `README`
+  - `package.json`
+  - `package-lock.json`
+  - `tsconfig.json`
+  - `vm.png`
+- **Must NOT contain**:
+  - `node_modules/`
+  - `dist/`
+
+### To run tests:
+
+<pre><code>npm ci
 npm run test
+</code></pre>
 
-# VM Validation
-# Your vm.png must show this terminal output in an x2go window:
+---
 
-hostname; hostname -I
+## VM Validation
+
+The screenshot `vm.png` must show this terminal output inside an x2go window:
+
+<pre><code>hostname; hostname -I
 ls ~/cs544
 ls ~/i?44
 crontab -l | tail -3
+</code></pre>
 
-# Provided Files
+---
 
-# src/lib/
-#   grades.ts          - Main logic (implement here)
-#   types.ts           - Type definitions (do not modify)
-#   errors.ts          - Error handling (do not modify)
-#   grade-utils.ts     - Optional utility functions
+## Provided Files
 
-# src/data/
-#   *.ts, *.json, *.csv - Sample grade data (read-only)
 
-# src/test/
-#   grades.ts          - Tests for Grades implementation
-#   errors.ts          - Tests for error logic
-
-# TypeScript Tips
-
-# - Avoid "any"; use utility types like "keyof", "Record<...>"
-# - Use "as" for narrowing (e.g., "as ColId")
-# - Use "!" for non-null assertion
-# - Use "structuredClone()" or "{ ...obj }" to avoid mutation
-
-# Testing & Debugging
-
-# All methods should return: Result<T, Err>
-
-# Usage:
-# return E.okResult(value)
-# return E.errResult(E.Err.err(msg, CODE))
-
-# Run all tests:
-npm test
-
-# Isolate tests with .only()
-# Skip tests with .skip()
-
-# For debugging:
-# - Use console.log()
-# - Use Chrome debugger with "--inspect-brk"
-
-# Design Guidelines
-
-# The Grades class should manage:
-# - Aggregate function registry
-# - Student registry
-# - Sections with enrollments and grades
-# - On-demand or cached row/column aggregates
-
-# Suggested helper method:
-# private chkIds(sectionId: T.SectionId, studentId?: T.StudentId, colId?: T.ColId): E.Result<void, E.Err>
-
-# Submission Checklist
-
-# [ ] All tests pass (npm test)
-# [ ] VM screenshot (vm.png) included
-# [ ] Required files exist in prj1-sol/
-# [ ] No extra or unnecessary files committed
-# [ ] README updated if needed
 
 
 
