@@ -21,7 +21,7 @@ This repository contains all coursework I have completed so far as part of my **
 
 1. **CS 471** - Programming Languages
 2. **CS 442** - Database Systems
-3. **CS 435** - Introduction to Data Mining
+3. **CS 436** - Introduction to Machine Learning
 
 ### Summer Plans/Work For 2025
 
