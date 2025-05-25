@@ -66,3 +66,8 @@ To handle formatting:
 - You may use modular blocks to organize your logic
 - Each block may handle sub-operations like formatting, padding, or addition
 - The output must be aligned and cleaned per the rules above
+
+## This is a picture of my implementation. - Rick Kabuto
+<img width="1343" alt="Screenshot 2025-05-04 at 6 10 35 PM" src="https://github.com/user-attachments/assets/6df13e72-2ae6-4c84-bba4-a63fee4c81f9" />
+
+
