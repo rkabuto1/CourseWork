@@ -1,4 +1,4 @@
-# Automatic Zoom - Project Set
+# Automata Theory Project Set
 
 This repository contains seven projects focused on simulating and constructing automata and Turing machines. Below are the descriptions for each project:
 
