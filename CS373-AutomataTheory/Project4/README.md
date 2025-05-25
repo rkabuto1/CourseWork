@@ -62,3 +62,6 @@ Memory tips:
 - Efficiency (in number of states and memory usage) will be informally considered.
 
 ---
+## Picture Of Implementation
+<img width="1135" alt="Screenshot 2025-05-25 at 2 09 49 PM" src="https://github.com/user-attachments/assets/115b1e15-7e98-4cd8-8dc1-b597404fec55" />
+
