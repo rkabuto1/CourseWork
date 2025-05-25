@@ -1,4 +1,4 @@
-# Project 1 - Automatic Zoom
+# Project 1
 
 ## Overview
 This project simulates the execution of a **partial non-deterministic finite automaton (NFA)** (partial meaning no ε-transitions).
