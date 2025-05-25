@@ -73,3 +73,6 @@ Instructor's implementation:
 - Following all tape, movement, and transition format constraints is critical.
 
 ---
+## Picture Of My Implementation
+<img width="1063" alt="Screenshot 2025-05-25 at 2 06 03 PM" src="https://github.com/user-attachments/assets/44cf2a19-323d-4baa-86bf-f11ab1609e6e" />
+
