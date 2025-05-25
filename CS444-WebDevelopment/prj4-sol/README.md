@@ -1,5 +1,10 @@
 # Project 4 – Grades Single Page App (DOM + Fetch)
 
+### Complete & Finished Project(Project 1,2,3,4 Combined - Visually)
+![Screenshot 2025-05-25 at 3 49 41 PM](https://github.com/user-attachments/assets/7ac24add-9c73-4e27-b479-4369c2827b66)
+
+
+
 **Due:** April 24, before midnight  
 **Course:** CS 544 – Web Development  
 **Note:** No late submissions. Academic honesty violations will result in a letter grade penalty.
