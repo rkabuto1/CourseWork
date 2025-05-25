@@ -17,11 +17,15 @@ This repository contains all coursework I have completed so far as part of my **
 12. **CS 301** - Ethical, Social & Global Issues of Computing  
 13. **MATH 327** - Probability with Statistical Methods (R Studio)
 
+### Summer Semester Classes
+1. **CS 436** - Introduction to Machine Learning
+2. **CS 428** - Computer Networks
+
 ### Next Semester Classes - Fall 2025(Gradutation Semester)
 
 1. **CS 471** - Programming Languages
 2. **CS 442** - Database Systems
-3. **CS 436** - Introduction to Machine Learning
+3. **CS 435** - Introduction to Data Mining
 
 ### Summer Plans/Work For 2025
 
