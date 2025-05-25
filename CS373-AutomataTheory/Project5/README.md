@@ -58,3 +58,5 @@ State size guidance:
 - Following all constraints regarding deterministic behavior, tape usage, and transition format is critical.
 
 ---
+## Picture of My Implementation
+<img width="1146" alt="Screenshot 2025-05-25 at 2 07 21 PM" src="https://github.com/user-attachments/assets/0cb92553-f125-4d76-aee0-25b201f2bc8e" />
