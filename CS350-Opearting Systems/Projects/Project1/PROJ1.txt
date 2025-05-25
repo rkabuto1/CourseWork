@@ -1,0 +1,10 @@
+group members: arianna carch, rick kabuto, jhon milo nunez
+status: project is completely done
+arianna: shutdown2
+rick: exit2
+jhon: mkdir2
+extra credit: logmessage()
+This system call logs a message to a system log. This can be useful for debugging or monitoring purposes.
+it takes one argument: char* msg
+how we worked on the project:
+at the beginning we met for about 2 hours to understand and outline the project. then we worked independently on our own functions and kept in contact whenver any of us faced an issue.
