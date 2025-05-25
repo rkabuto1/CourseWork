@@ -1,49 +1,135 @@
-xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
-Version 6 (v6).  xv6 loosely follows the structure and style of v6,
-but is implemented for a modern x86-based multiprocessor using ANSI C.
+#!/bin/bash
+# README: CS 350 Operating Systems, Spring 2025
+# Programming Project 1
 
-ACKNOWLEDGMENTS
+cat << 'EOF'
+CS 350 Operating Systems, Spring 2025
+Programming Project 1 
 
-xv6 is inspired by John Lions's Commentary on UNIX 6th Edition (Peer
-to Peer Communications; ISBN: 1-57398-013-7; 1st edition (June 14,
-2000)). See also http://pdos.csail.mit.edu/6.828/2016/xv6.html, which
-provides pointers to on-line resources for v6.
+## Project Description
+In this project, you will add new functionality to xv6, including the ability to shut the system
+down, print exit statuses, and output uptime. You will also answer questions related to system
+call implementation in xv6. The goal of this project is to learn how system calls are implemented
+in modern OSes and how system calls are invoked from a user program in xv6.
 
-xv6 borrows code from the following sources:
-    JOS (asm.h, elf.h, mmu.h, bootasm.S, ide.c, console.c, and others)
-    Plan 9 (entryother.S, mp.h, mp.c, lapic.c)
-    FreeBSD (ioapic.c)
-    NetBSD (console.c)
+This project contributes 6.25% toward the final grade.
 
-The following people have made contributions: Russ Cox (context switching,
-locking), Cliff Frey (MP), Xiao Yu (MP), Nickolai Zeldovich, and Austin
-Clements.
+1) Baseline source code
+For this and all the later projects, you will be working on the baseline code that needs to be
+downloaded from brightspace. Please make sure you read this whole section, as well as the grading
+guidelines (Section 6), before downloading your code from Brightspace.
 
-We are also grateful for the bug reports and patches contributed by Silas
-Boyd-Wickizer, Anton Burtsev, Cody Cutler, Mike CAT, Tej Chajed, Nelson Elhage,
-Saar Ettinger, Alice Ferrazzi, Nathaniel Filardo, Peter Froehlich, Yakir Goaron,
-Shivam Handa, Bryan Henry, Jim Huang, Alexander Kapshuk, Anders Kaseorg,
-kehao95, Wolfgang Keller, Eddie Kohler, Austin Liew, Imbar Marinescu, Yandong
-Mao, Hitoshi Mitake, Carmi Merimovich, Joel Nider, Greg Price, Ayan Shafqat,
-Eldar Sehayek, Yongming Shen, Cam Tenny, Rafael Ubal, Warren Toomey, Stephen Tu,
-Pablo Ventura, Xi Wang, Keiichi Watanabe, Nicolas Wolovick, Grant Wu, Jindong
-Zhang, Icenowy Zheng, and Zou Chang Wei.
+2) Build and run xv6
+The following provides instructions on how to build and run xv6 using either a CS machine or
+your own computer.
 
-The code in the files that constitute xv6 is
-Copyright 2006-2016 Frans Kaashoek, Robert Morris, and Russ Cox.
+2.1) Using a CS machine
 
-ERROR REPORTS
+   (1) Log into a CS machine (i.e., a local machine or a remote cluster machine).
+   (2) Download and SCP the baseline xv6 code.
+   (3) Compile and run xv6:
+   $ make qemu-nox
 
-Please send errors and suggestions to Frans Kaashoek and Robert Morris
-(kaashoek,rtm@mit.edu). The main purpose of xv6 is as a teaching
-operating system for MIT's 6.828, so we are more interested in
-simplifications and clarifications than new features.
+After the compiling the kernel source and generating the root file system, the Makefile will
+start a QEMU VM to run the xv6 kernel image just compiled (you can read the Makefile for
+more details). Then you will see the following output (disregard the warning message(s)),
+indicating you have successfully compiled and run the xv6 system.
 
-BUILDING AND RUNNING XV6
+xv6...
+cpu0: starting 0
+sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
+init: starting sh
+$
 
-To build xv6 on an x86 ELF machine (like Linux or FreeBSD), run
-"make". On non-x86 or non-ELF machines (like OS X, even on x86), you
-will need to install a cross-compiler gcc suite capable of producing
-x86 ELF binaries. See http://pdos.csail.mit.edu/6.828/2016/tools.html.
-Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
-simulator and run "make qemu".
+Troubleshooting: if you see the following error message
+make: execvp: ./sign.pl: Permission denied
+Solve it by running the following command:
+chmod ugo+x ./sign.pl
+Then
+make clean
+make qemu-nox
+
+2.2 Using your own computer
+You will need a Linux distribution that supports GNU C, which is targeted at the x86 architecture
+and using ELF binaries.
+(1) Install QEMU in your computer. For example, on Ubuntu, just run:
+$ sudo apt-get install qemu
+(2) Perform Section 2.1 step (2).
+(3) Open the Makefile in the xv6 source directory, and comment out the following line:
+QEMU = ˜boubinjg/fs/bin/qemu-system-i386
+by putting a “#” at the beginning of the line.
+(4) Perform Section 2.1 step (3).
+
+3 Shutdown commands and system calls (60 points)
+The original xv6 system doesn’t have a “shutdown” command to properly turn off the machine.
+In this part, you are going to add a “shutdown” command to shut down the machine and four
+other system calls.
+
+3.1 shutdown command and the system call
+The first command you need complete is named “shutdown”, which simply shuts down the machine.
+In the baseline code, the file “shutdown.c” provides the implementation of this command.
+What you need to do is to complete the corresponding system call and its user space wrapper routine.
+
+3.2 Additional system calls
+Operating systems developers regularly update their operating systems with new features, which
+may include new system calls. Your group will add N additional system calls to xv6 where
+N == GroupSize. Each group member is responsible for one system call, and can be helped by
+other group members. 5 example system calls are documented below. Select N of these 5, without
+repetition.
+
+3.2.1 shutdown2
+The first command you may complete is named “shutdown2”, which prints a shutdown message
+provided by the user within the system call implementation before shutting down the machine.
+
+3.2.2 exit2
+The second command you may complete is named “exit2”, which behaves like the exit() system
+call and voluntarily exits a running process. exit2 takes an integer exit status argument and prints
+that status within the system call implementation before exiting.
+
+3.2.3 mkdir2
+The third command you may complete is named “mkdir2”, which behaves like the mkdir system
+call. mkdir2 takes two directory names as arguments and creates both directories in your file system.
+
+3.2.4 uptime2
+The fourth command you may complete is named “uptime2”, which behaves like the uptime
+system call which returns the amount of ticks (100ths of a second) your system has been turned
+on. uptime2 provides takes an integer argument which changes the format of the return value in
+kernel space. uptime2(1) returns uptime in ticks, uptime2(2) returns uptime in seconds, and
+uptime2(3) returns uptime in minutes.
+
+3.2.5 Custom System Call (5 extra credit points)
+If you would like, one group member can complete a custom system call. This system call can
+be based on an existing system call, or entirely of your own invention. Your custom system call
+MUST take at least one argument and use that argument in its functionality.
+Please document the purpose, functionality, and usage of this system call in a PROJ1.txt file
+included with your code.
+
+3.3 Requirements and hints
+• You should not change the code in shutdown.c or other user space wrappers.
+• To shut down the xv6 virtual machine in your system call, use:
+  outw(0xB004, 0x0|0x2000);
+  outw(0x604, 0x0|0x2000);
+• Study how other system calls (like open) are implemented.
+• Understand the files involved, including the simple assembly ones.
+
+4 xv6 system call implementation Q&A (40 points)
+Answer the following questions:
+
+(1) What is the name, invocation location, and definition location of the shutdown2 wrapper?
+(2) How does the wrapper trigger the system call? Include code.
+(3) How does the kernel locate and call the system call? Include code.
+(4) How are arguments passed from user space to the kernel?
+
+Save your answers in a file named xv6-syscall-mechanisms.pdf and submit it on Brightspace.
+
+5 Submit your work
+Submit your code as a zip file on Brightspace. Include a PROJ1.txt file with details of who did what.
+
+6 Grading
+• Late penalty: 30% per day, up to 2 days.
+• Don’t use unapproved xv6 source. 100% CPU on QEMU = -10.
+• If your code doesn’t patch or compile, TAs will try to fix it. See penalty breakdown.
+• Broken functionality = partial credit.
+• Cheating = zero and academic action.
+
+EOF
