@@ -227,7 +227,3 @@ Answer the following:
    * But **code must stay private**
    * Share only with group
    * Violation = **0 pts + report**
-
----
-
-Let me know if you want this exported to a Markdown or PDF file!
