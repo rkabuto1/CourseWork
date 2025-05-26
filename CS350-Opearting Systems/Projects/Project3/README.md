@@ -1,7 +1,3 @@
-Absolutely — here's your **CS 350 Operating Systems, Spring 2025 - Programming Project 3 (PROJ3)** content, neatly organized with bolded headers and clear formatting, while keeping the **original wording unchanged**.
-
----
-
 # **CS 350 Operating Systems, Spring 2025**
 
 ## **Programming Project 3 (PROJ3)**
@@ -284,7 +280,3 @@ Describe:
    * OK to discuss
    * **No code sharing** outside your group
    * Violation = **0 points + report**
-
----
-
-Let me know if you'd like this exported as a PDF, Markdown, or a formatted README.
