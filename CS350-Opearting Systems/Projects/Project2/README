@@ -1,6 +1,0 @@
-README
-
-ok so the first part of where you have to get the child to run first is done and works
-but the part where you have to implement the stride scheduler is also done but its having problems
-whenever i try to run the command to check it i get an exec fail so something is wrong somewhere ig i just dont know where
-i tried to add comments wherever i added stuff to make it more clear what i changed
