@@ -1,7 +1,3 @@
-Here is your **CS 350 Operating Systems Project 2** write-up, cleaned up and organized for readability but kept **word-for-word unchanged**:
-
----
-
 # **CS 350 Operating Systems, Spring 2024**
 
 ## **Programming Project 2 (PROJ2)**
@@ -273,6 +269,3 @@ In `PROJ2.txt`, include:
    * Code can be shared **only** within group
    * Violations = **0 points + report**
 
----
-
-Let me know if you want this formatted as a PDF, Markdown, or converted into a Bash/README script.
