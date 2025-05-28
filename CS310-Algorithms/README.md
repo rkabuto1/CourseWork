@@ -1,4 +1,6 @@
 # CS310-Algorithms
 
 
-Will Add Course Work Soon(This Message Was Sent as of 12/16/24)
+Trying to Find Work. I took this class a really long time ago.
+
+Class was an intro class to common algorithms such as BFS, DFS, Sorting Algorithms, Dijkstra's Kruskals, Binary Trees, Shorest Path Algorithms, and so many more.
