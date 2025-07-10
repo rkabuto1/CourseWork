@@ -16,6 +16,7 @@ This repository contains all coursework I have completed so far as part of my **
 11. **CS 444** - Programming For The Web
 12. **CS 301** - Ethical, Social & Global Issues of Computing  
 13. **MATH 327** - Probability with Statistical Methods (R Studio)
+14. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
 
 ### Summer Semester Classes
 1. **CS 436** - Introduction to Machine Learning
@@ -29,7 +30,7 @@ This repository contains all coursework I have completed so far as part of my **
 
 ### Summer Plans/Work For 2025
 
-I will be doing an internship at Queens College working for the Cyber-Security Department as a CyberSecurity Analyst Intern.
+I will be doing an internship at Synthesys working for the AI department as an AI & Automation Intern
 
 ### Future Goals
-After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security**. 
+After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** sometime in 5 years after my BA in science
