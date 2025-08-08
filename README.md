@@ -13,24 +13,21 @@ This repository contains all coursework I have completed so far as part of my **
 8. **CS 373** - Automata Theory and Formal Languages
 9. **CS 375** - Design and Analysis of Algorithms
 10. **CS 402** - Software Engineering Project Management
-11. **CS 444** - Programming For The Web
-12. **CS 301** - Ethical, Social & Global Issues of Computing  
-13. **MATH 327** - Probability with Statistical Methods (R Studio)
-14. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
-
-### Summer Semester Classes
-1. **CS 436** - Introduction to Machine Learning
-2. **CS 428** - Computer Networks
+11. **CS 428** - Computer Networks
+12. **CS 436** - Introduction to Machine Learning
+13. **CS 444** - Programming For The Web
+14. **CS 301** - Ethical, Social & Global Issues of Computing  
+15. **MATH 327** - Probability with Statistical Methods (R Studio)
+16. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
 
 ### Next Semester Classes - Fall 2025(Gradutation Semester)
 
 1. **CS 471** - Programming Languages
 2. **CS 442** - Database Systems
-3. **CS 435** - Introduction to Data Mining
 
 ### Summer Plans/Work For 2025
 
-I will be doing an internship at Synthesys working for the AI department as an AI & Automation Intern
+I will be doing an internship at Synthesys working for the AI department as an AI & Automation Integration Analyst
 
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** sometime in 5 years after my BA in science
