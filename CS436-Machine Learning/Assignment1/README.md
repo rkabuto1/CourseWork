@@ -1,7 +1,3 @@
-Here is the `README.md` version of your assignment, formatted exactly as it is worded and structured for a GitHub post:
-
----
-
 # Assignment I
 
 **CS-436/536-01: Intro to Machine Learning**
