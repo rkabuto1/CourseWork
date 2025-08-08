@@ -33,16 +33,17 @@ None. All features for both Part 1 and Part 2 are fully implemented and tested.
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 [Provide clear and complete step-by-step instructions on how to run and test your project]: #
 
-    Step 1) Compile all the programs using - "Make"
-    Step 2) Start Server1 For udppinger-server1.cc - "./server1 12000"
-    Step 3) In a seperate terminal run the client message - "./client1 127.0.0.1 12000"
-        Step 3a) Client sends a ping every 2 seconds and should send a total of 90 poings
-        Step 3b) After 3 miutes, the client prints a summary of the ping stats    
-    Step 4) Start Server2 for udppinger-server2.cc - "./server2 12000"
-    Step 5) In a seperate terminal, run the client message - "./client2 127.0.0.1 12000"
-        Step 5a) Client sends a ping every 2 seconds and should send a total of 90 poings
-        Step 5b) After 3 miutes, the client prints a summary of the ping stats
-        Step 5c) After 30 seconds, the server will automatically shutdown after 30 seconds of inactivity  
+Step 1) Compile all the programs using - "Make"  
+Step 2) Start Server1 For udppinger-server1.cc - "./server1 12000"  
+Step 3) In a separate terminal run the client message - "./client1 127.0.0.1 12000"  
+  - Step 3a) Client sends a ping every 2 seconds and should send a total of 90 pings  
+  - Step 3b) After 3 minutes, the client prints a summary of the ping stats  
+
+Step 4) Start Server2 for udppinger-server2.cc - "./server2 12000"  
+Step 5) In a separate terminal, run the client message - "./client2 127.0.0.1 12000"  
+  - Step 5a) Client sends a ping every 2 seconds and should send a total of 90 pings  
+  - Step 5b) After 3 minutes, the client prints a summary of the ping stats  
+  - Step 5c) After 30 seconds, the server will automatically shut down after 30 seconds of inactivity  
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 ### SUBMISSION
@@ -51,17 +52,13 @@ I have done this assignment completely on my own. I have not copied it, nor have
 
 By signing my name below and submitting the project, I confirm the above statement is true and that I have followed the course guidelines and policies.
 
-* **Submission date:** [Insert the Submission Date When Truly Done]
-
-* **Team member 1 name:** Rick Kabuto
-
-* **Team member 1 tasks:** 
-    1) udppinger-server1.cc, udppinger-client1.cc
-    2) udppinger-server2.cc, udppinger-client2.cc
-    3) Makefile & README.md
-    4) headerfile.h
-    
-* **Team member 2 name (N/A, if not applicable):** N/A
-
-* **Team member 2 tasks (N/A, if not applicable):** N/A
+* **Submission date:** [Insert the Submission Date When Truly Done]  
+* **Team member 1 name:** Rick Kabuto  
+* **Team member 1 tasks:**  
+  1) udppinger-server1.cc, udppinger-client1.cc  
+  2) udppinger-server2.cc, udppinger-client2.cc  
+  3) Makefile & README.md  
+  4) headerfile.h  
+* **Team member 2 name (N/A, if not applicable):** N/A  
+* **Team member 2 tasks (N/A, if not applicable):** N/A  
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
