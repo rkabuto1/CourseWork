@@ -7,18 +7,18 @@ This repository contains all coursework I have completed so far as part of my **
 2. **CS 120** - Programming & Hardware Fundamentals  
 3. **CS 140** - Programming with Objects and Data Structures  
 4. **CS 220** - Architecture from a Programming Perspective
-5. **CS 310** - Programming with Objects & Data Structures 
-6. **CS 320** - Advanced Computer Architecture
-7. **CS 350** - Operating Systems
-8. **CS 373** - Automata Theory and Formal Languages
-9. **CS 375** - Design and Analysis of Algorithms
-10. **CS 402** - Software Engineering Project Management
-11. **CS 428** - Computer Networks
-12. **CS 436** - Introduction to Machine Learning
-13. **CS 444** - Programming For The Web
-14. **CS 301** - Ethical, Social & Global Issues of Computing  
-15. **MATH 327** - Probability with Statistical Methods (R Studio)
-16. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
+5. **CS 301** - Ethical, Social & Global Issues of Computing  
+6. **CS 310** - Programming with Objects & Data Structures 
+7. **CS 320** - Advanced Computer Architecture
+8. **CS 350** - Operating Systems
+9. **CS 373** - Automata Theory and Formal Languages
+10. **CS 375** - Design and Analysis of Algorithms
+11. **CS 402** - Software Engineering Project Management
+12. **CS 428** - Computer Networks
+13. **CS 436** - Introduction to Machine Learning
+14. **CS 444** - Programming For The Web
+16. **MATH 327** - Probability with Statistical Methods (R Studio)
+17. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
 
 ### Next Semester Classes - Fall 2025(Gradutation Semester)
 
