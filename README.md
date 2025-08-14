@@ -23,11 +23,10 @@ This repository contains all coursework I have completed so far as part of my **
 ### Next Semester Classes - Fall 2025(Gradutation Semester)
 
 1. **CS 471** - Programming Languages
-2. **CS 442** - Database Systems
 
 ### Summer Plans/Work For 2025
 
-I will be doing an internship at Synthesys working for the AI department as an AI & Automation Integration Analyst
+I will be doing an internship at Synthesys working for the Fullfillment department as an AI & Automation Integration Analyst
 
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** sometime in 5 years after my BA in science
