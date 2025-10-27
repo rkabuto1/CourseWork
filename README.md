@@ -24,9 +24,10 @@ This repository contains all coursework I have completed so far as part of my **
 
 1. **CS 471** - Programming Languages
 
-### Summer Plans/Work For 2025
+### Career Future ###
 
-I will be doing an internship at Synthesys working for the Fullfillment department as an AI & Automation Integration Analyst
-
+1. Present - Full-Time AI & Automation Analyst @ Synthesys
+2. Summer 2026 - Full-Time Analyst & Deloitte
+   
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** sometime in 5 years after my BA in science
