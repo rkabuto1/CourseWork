@@ -27,7 +27,7 @@ This repository contains all coursework I have completed so far as part of my **
 ### Career Future ###
 
 1. Present - Full-Time AI & Automation Analyst @ Synthesys
-2. Summer 2026 - Full-Time Analyst & Deloitte
+2. Summer 2026 - Full-Time Analyst NYC @ Deloitte
    
 ### Future Goals
 After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** sometime in 5 years after my BA in science
