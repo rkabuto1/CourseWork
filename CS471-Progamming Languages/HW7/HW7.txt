@@ -1,0 +1,177 @@
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Rick Kabuto
+CS471
+Due November, 5th 2025
+
+Some questions are adapted from Programming Language Pragmatics, by Michael L. Scott. Please submit written answers in a text
+file, with the extension .txt.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+1) Consider the below pseudocode:
+    int a = 0, b = 1;
+    def f(int x, int y) {
+        x = 4;
+        print a;
+    }
+    def g(int x, int y) {
+        y = 5;
+    }
+    f(a, b)
+    g(a, b)
+    print a;
+    print b;
+
+What does the program output when run with
+    a) call-by-value?
+    b) call-by-reference?
+    c) call-by-value/restore
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+a) call-by-value? -> The function receives copies of the arguments which means that we are essentially making duplicates of the 
+variables instead of actually using the real ones. Thus, we are only changing the duplicate variables which means the "real"
+variables are going to stay the same giving us the output:
+    0
+    1
+
+b) call-by-reference? -> The function is actually using the real variables instead of using the copies. The parameters x and 
+y are going to refer to the original variables a and b. So the variables a and b are going to be changed when f and g sets x to 4
+and 5 This leads us to the output:
+    4
+    4
+    5
+
+c) call-by-value/restore -> The function is going to start with copies of the variable but will actually replace the real variables.
+Therefore each temporary copies are made, but final results update the originals. This leads us to the output:
+    0
+    4
+    5
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2) Suppose you are working in a language in which all parameters must be passed by name.  Can you write a subroutine 
+swap(x, y), which swaps the values of its actual parameters?
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+procedure swap(x, y):
+    x, y := y, x
+
+Explanation) This version works only if both expressions are evaluated before assignment, avoiding re evaluation side effects.
+This subroutine swap(x, y) calls by name and reevaluates x and y and assigns & updates the real values directly.
+Therefore, the parallel assignment swaps both variables in one step without needing a temporary variable.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+3) Either:
+    - in pseudocode, give an example of a program which will print the same output with call-by-value and call-by-value/restore, 
+    but a different output with call-by-reference
+	- explain why writing such a program is not possible.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Explanation) This is not possible. It is not possible to write such a program because call by value and call by value/restore act 
+the same when the inputs are different variables. The only case where call by value/restore could differ is when multiple parameters 
+reference the same variable. But in that situation, its behavior matches call by reference instead of differing from it.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+4a) An invariant is a property maintained by some code. That is, it is a property that is always true.  Describe (in a sentence 
+or two) the invariant maintained by a binary search tree.
+
+4b) Suppose you were implementing a binary search tree in C++. What mechanism of object oriented programming allows you to ensure 
+the invariant is maintained? Briefly explain how you would use this mechanism when specifically implementing a binary search tree. 
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+a) In a binary search tree, every node on the left side is smaller and everything on the right is larger. This rule is going to 
+stay consistent throughout adding and removing nodes. This will allow us to keep our binary tree ordered correctly and allows 
+for efficient optimization. 
+
+b) The mechanism of object oriented programming that will enable you to ensure the invariant is maintained is encapsulation. 
+You hide the inner parts of the tree from the outside world so outside code can't inadvertently change it. Furthermore, you allow 
+ensure the tree is always in the correct order with functions like insert or remove.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+5) Justify your reasoning for both (a) and (b).
+   (a) Give an example of a case where you would choose to derive some class B from a class A, rather than including a member 
+   field of type A in B.
+   (b) Give an example of a case where you would choose to include a member field of type A in class B, rather than deriving class 
+   B from class A.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+a) A typical example is when A is a class called Colors and B is the color blue. In such cases, we want B to inherit from A since 
+B is a type of color. We will let it use color functions and add its own. Thereby, we create class B from A when B is a specialized 
+version of A, improving or adjusting the behavior of A.
+
+b) An example is if A is a logger class and B is an application class. The application uses the logger to record messages but is not 
+a type of logger. Overall, you would include a member field of type A in class B when B uses A but is not a subtype of it.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+6) Eiffel is a statically type object-oriented programming language with multiple inheritance and garbage collection. As opposed 
+to C++, why might destructors be:
+    (a) less necessary in Eiffel?
+    (b) less useful in Eiffel?
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+a) Eiffel does not require manual cleaning up of the garbage memory. The language cleans up memory by itself and you don't have 
+to actually write code to free it. That's why destructors aren't really needed in languages like Eiffel. Since the system already 
+handles deleting unused objects, its not really necessary.
+
+b) Destructors are less useful in Eiffel because programmers have little control over when garbage collection occurs. Essentially,
+you can't control exactly when Eiffel deletes objects. Since cleanup happens at random times, we can't trust destructors to handle
+specific tasks that happen right away. An example would be like closing files or freeing resources.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+7) Python does not allow classes to have private fields.
+    a) We discussed three major features of objected-oriented languages: encapsulation, inheritance, and  dynamic method binding.  
+    Which of these three features is most directly impacted by this limitation of Python?  Briefly explain your answer.
+    b) Provide an argument that Python/Python programmers would benefit from private class fields being added to the language.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+a) Encapsulation is the most directly impacted in Python because the language does not have real private fields. This means that
+anyone can see or change data from the outside which makes it a lot harder to protect and control.
+
+b) Python programmers would benefit from private fields because it would protect the integrity of their data. Private fields 
+would give more control and stability in keeping data safe and stopping unwanted changes. This would make bigger projects easier
+to manage and help with debugging.
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+8) Consider the following program:
+    class Animal { make_sound() { print("running"); } }
+    class Cow : public Animal { make_sound() { print("moo"); } }
+    class Duck : public Animal { make_sound() { print("quack"); } }
+
+    void main() {
+        Cow c;
+        Duck d;
+
+        Animal* a1 = &c;
+        Animal* a2 = &d;
+
+        c.make_sound();
+        d.make_sound();
+
+        a1->make_sound();
+        a2->make_sound();
+    }
+
+    What will be printed if using
+    a) static method binding?
+    b) dynamic method binding?
+    c) If we wanted to add a "number_of_feet" field to animal, and ensure that it could not be incorrectly modified by a user of 
+    the Animal class, would it make sense to have the field be public, private, or protected?  Why?
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+a) The program decides which version of the function to run before it starts. A1 and a2 are declared as Animal so they both use
+the animal version. Thus the output will be:
+    moo
+    quack
+    running
+    running
+
+b) The program decides which version of the function while it is running. During runtime, a1 points to Cow and a2 points to Duck
+Thus the output will be:
+    moo
+    quack
+    moo
+    quack
+
+c) The best field to have is private if you do not want a user to incorrectly modify the class. Private fields allow no one 
+outside the class to be able to change it directly and this keeps the data safe and only lets class's own function update it 
+right away. This ensures data integrity.
+
