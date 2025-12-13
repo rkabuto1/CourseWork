@@ -17,12 +17,9 @@ This repository contains all coursework I have completed so far as part of my **
 12. **CS 428** - Computer Networks
 13. **CS 436** - Introduction to Machine Learning
 14. **CS 444** - Programming For The Web
+15. **CS 471** - Programming Languages
 16. **MATH 327** - Probability with Statistical Methods (R Studio)
 17. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
-
-### Next Semester Classes - Fall 2025(Gradutation Semester)
-
-1. **CS 471** - Programming Languages
 
 ### Career Future ###
 
