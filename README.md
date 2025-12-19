@@ -20,10 +20,3 @@ This repository contains all coursework I have completed so far as part of my **
 15. **CS 471** - Programming Languages
 16. **MATH 327** - Probability with Statistical Methods (R Studio)
 17. **ISC2 Cyber Security Certification** - Cyber Security Certifcation Course & Obtained July 2025
-
-### Career Future ###
-
-2. Summer 2026 - Full-Time Analyst NYC @ Deloitte
-   
-### Future Goals
-After obtaining my Bachelor's degree, I plan to pursue a **Master's Degree in Cyber Security** sometime in 5 years after my BA in science
