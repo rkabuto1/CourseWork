@@ -1,6 +1,6 @@
 ## Relevant Coursework Overview
 
-This repository contains all coursework I have completed so far as part of my **Bachelor's Degree in Computer Science** at Binghamton University. Below is a summary of the courses I have completed, coursework in progress, and future plans.
+This repository contains all coursework I have completed so far as part of my **Bachelor's Degree in Computer Science** at Binghamton University. Below is a summary of the courses I have completed. Graduated in December 2025
 
 ### Completed Coursework
 1. **CS 101** - Professional Skills, Ethics & Computer Science Trends  
